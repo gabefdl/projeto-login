@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Document</title>
 </head>
 <body>
@@ -18,7 +19,22 @@
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações do seu ambiente.</p>
 
                 <form action="action.php" method="post">
-                    
+                    <div class="campo">
+                        <label for="iemail"><span class="material-symbols-outlined">Mail</span></label>
+                        <input type="email" name="iemail" id="iemail" placeholder="seu login" autocomplete="email" required maxlength="30">
+                    </div>
+
+                    <div class="campo">
+                        <label for="isenha"> <span class="material-symbols-outlined"> Key</span></label>
+                        <input type="password" name="isenha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8">
+                       
+                    </div>
+                    <div class="Entrar">
+                        <input type="submit" value="Entrar">
+                        <a href="esqueci.html" class="link">
+                            Esqueci a senha
+                        </a>
+                    </div>
                 </form>
             </div>
         </section>
